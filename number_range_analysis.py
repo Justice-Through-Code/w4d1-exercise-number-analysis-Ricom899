@@ -23,9 +23,21 @@ def calculate_sum(start, end):
     Return:
         int: The sum of numbers within the range.
     """
+
     # TODO: Implement the logic to calculate the sum of numbers within the range.
     # TODO: Return the calculated sum.
 
+    x = 0
+
+    for num in range(start, end + 1):
+       
+        x += num
+        print(x)
+    
+    return x
+   
+    
+    
 def find_smallest_number(start, end):
     """
     Find the smallest number within the specified range.
@@ -40,6 +52,17 @@ def find_smallest_number(start, end):
     # TODO: Implement the logic to find the smallest number within the range.
     # TODO: Return the found smallest number.
 
+
+
+    return min(start, end)
+
+
+
+
+
+
+
+
 def find_largest_number(start, end):
     """
     Find the largest number within the specified range.
@@ -53,6 +76,14 @@ def find_largest_number(start, end):
     """
     # TODO: Implement the logic to find the largest number within the range.
     # TODO: Return the found largest number.
+    
+    biggest = 0
+
+    for num in range(start, end + 1):
+        if num > biggest:
+            biggest = num
+    return biggest
+
 
 def count_even_numbers(start, end):
     """
@@ -68,6 +99,18 @@ def count_even_numbers(start, end):
     # TODO: Implement the logic to count even numbers within the range.
     # TODO: Return the count of even numbers.
 
+    even_num =[]
+
+    for x in range(start, end + 1):
+        if x % 2 == 0:
+            even_num.append(x)
+            print(x)
+    return len(even_num)
+
+
+
+
+
 def count_odd_numbers(start, end):
     """
     Count the number of odd numbers within the specified range.
@@ -81,3 +124,11 @@ def count_odd_numbers(start, end):
     """
     # TODO: Implement the logic to count odd numbers within the range.
     # TODO: Return the count of odd numbers.
+    
+    odd_num =[]
+
+    for x in range(start, end + 1):
+        if x % 2 != 0:
+            odd_num.append(x)
+            print(x)
+    return len(odd_num)
